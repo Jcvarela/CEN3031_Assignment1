@@ -1,0 +1,23 @@
+#searchBar {
+  margin: 15px 10px;
+}
+
+.tableWrapper {
+  max-height: 400px;
+  overflow: auto;
+}
+
+p1{
+  color: #3d4e68;
+}
+
+.btn-danger{
+    float:right;
+    margin-right: 20px;
+}
+
+.btn-success{
+    margin-left: 20px
+}
+
+
