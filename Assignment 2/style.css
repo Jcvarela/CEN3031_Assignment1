@@ -2,22 +2,36 @@
   margin: 15px 10px;
 }
 
-.tableWrapper {
-  max-height: 400px;
-  overflow: auto;
+.tabbleWrapper{
+    /*max-height: 400px;*/
+    /*overflow: auto;*/
 }
 
 p1{
   color: #3d4e68;
 }
 
-.btn-danger{
+.to-the-left{
+    margin-left: 20px
+}
+
+.to-the-right{
     float:right;
     margin-right: 20px;
 }
 
-.btn-success{
-    margin-left: 20px
+tr {
+    width: 100%;
+    display: inline-table;
 }
 
+table{
+    height:350px;
+    display: -moz-groupbox;
+}
+tbody{
+    overflow-y: scroll;
+    height: 350px;
 
+    position: absolute;
+}
