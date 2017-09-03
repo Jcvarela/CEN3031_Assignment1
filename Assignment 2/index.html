@@ -30,15 +30,15 @@
 
           <nav class="navbar navbar-default">
             <button type="button" class="btn btn-success navbar-btn to-the-left" data-toggle="modal" data-target=".bs-example-modal-lg" ng-click="openNewItemModel()">
-              <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Create
             </button>
 
             <button id="deleteButton" type="button" class="btn btn-danger navbar-btn to-the-right" disabled ng-click="deleteListing()">
-              <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Delete
             </button>
 
               <button id="cancelButton" type="button" class="btn btn-default navbar-btn to-the-right" disabled ng-click="canceldeleteListing()">
-                  <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Cancel
+                  <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span> Cancel
               </button>
           </nav>
 
@@ -99,7 +99,7 @@
                      * include a way to remove individual listings
 
                -->
-                <tbody class ="tableWrapper">
+                <tbody>
                   <tr ng-repeat="x in listings | filter:searchString" ng-click="showDetails(listings.indexOf(x))">
                     <td class="col-xs-2">{{x.code}}</td>
                     <td class="col-xs-9">{{x.name}}</td>
