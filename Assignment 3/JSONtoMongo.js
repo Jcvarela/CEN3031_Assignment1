@@ -40,7 +40,7 @@ var setData = function() {
             if (err) {
                 return reject(err);
             }
-            
+
             return resolve(JSON.parse(data));
         })
     }).then(function (input) {
