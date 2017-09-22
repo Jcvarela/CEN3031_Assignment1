@@ -1,12 +1,12 @@
-var config = require('../config/config'), 
-    request = require('request');
+//var config = require('../config/config'),
+var  request = require('request');
 
 module.exports = function(req, res, next) {
   if(req.body.address) {
     var options = {
-      key: config.googleMaps.key, 
+      key: process.env.GOOGLE_KEY,
       address: req.body.address
-    }
+    };
     request({
       url: 'https://maps.googleapis.com/maps/api/geocode/json', 
       qs: options
