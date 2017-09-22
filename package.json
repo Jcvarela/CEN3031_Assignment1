@@ -2,12 +2,15 @@
   "name": "Assignment4",
   "version": "1.0.0",
   "description": "Routing server-side requests using ExpressJS",
-  "main": "server.js",
   "author": "Medhir Bhargava",
   "license": "MIT",
+  "engines":{
+    "node": "7.5.0"
+  },
+  "main": "server.js",
   "scripts": {
-    "postinstall": "bower install",
-    "start" : "npm install && node server.js"
+    "start" : "npm install && node server.js",
+    "postinstall": "bower install"
   },
   "dependencies": {
     "bower": "^1.8.2",
