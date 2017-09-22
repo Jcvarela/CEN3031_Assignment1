@@ -11,3 +11,5 @@ node_modules
 public
 
 .idea/
+.env
+npm-debug.log
